@@ -29,7 +29,7 @@ export default class Cart {
   }
 
   delItem(id: number): void {
-    let idDel = this._items.findIndex(item => item.id == id);
+    const idDel = this._items.findIndex(item => item.id === id);
     if (idDel === -1) {
       throw new Error('Не найден элемен');
     }
